@@ -1,6 +1,7 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 import { login as authLogin } from "@/api/auth";
+import { accountPermissions } from "@/api/account";
 
 export const useUserStore = defineStore(
     "user", () => {
@@ -15,7 +16,24 @@ export const useUserStore = defineStore(
                 const res = await authLogin(params)
                 console.log(res);
                 setToken(res.token)
+                await afterLogin()
+                await fetchPermsAndMenus()
                 Promise.resolve(res)
+            } catch (error) {
+                console.log(error);
+                throw error
+            }
+        }
+
+        const afterLogin = async () => {
+
+
+        }
+        const fetchPermsAndMenus = async () => {
+            try {
+                const res = await accountPermissions({ token: token.value })
+                console.log(res);
+
             } catch (error) {
                 console.log(error);
                 throw error

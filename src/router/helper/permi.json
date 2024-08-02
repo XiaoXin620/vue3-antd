@@ -1,0 +1,1257 @@
+{
+    "allAuth": [
+        {
+            "action": "user:form:phone",
+            "describe": "手机号禁用",
+            "type": "2",
+            "status": "1"
+        },
+        {
+            "action": "user:add",
+            "describe": "添加用户按钮",
+            "type": "1",
+            "status": "1"
+        }
+    ],
+    "auth": [
+        {
+            "action": "user:form:phone",
+            "describe": "手机号禁用",
+            "type": "2"
+        },
+        {
+            "action": "user:add",
+            "describe": "添加用户按钮",
+            "type": "1"
+        }
+    ],
+    "menu": [
+        {
+            "redirect": null,
+            "path": "/dashboard/analysis",
+            "component": "dashboard/Analysis",
+            "route": "1",
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "home",
+                "title": "首页"
+            },
+            "name": "dashboard-analysis",
+            "id": "cd9902aa2b1011ebb72900163e03"
+        },
+        {
+            "redirect": null,
+            "path": "/user",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/user/UserList",
+                    "component": "user/UserList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户信息管理"
+                    },
+                    "name": "user-UserList",
+                    "id": "1258307065211736066"
+                },
+                {
+                    "path": "/user/UserOnlineList",
+                    "component": "user/UserOnlineList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "在线用户"
+                    },
+                    "name": "user-UserOnlineList",
+                    "id": "1514423681372372994"
+                },
+                {
+                    "path": "/userDistribution/UserDistributionList",
+                    "component": "userDistribution/UserDistributionList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户分销关系"
+                    },
+                    "name": "userDistribution-UserDistributionList",
+                    "id": "1684820250398724098"
+                },
+                {
+                    "path": "/userAudit/UserAuditList",
+                    "component": "userAudit/UserAuditList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户信息审核"
+                    },
+                    "name": "userAudit-UserAuditList",
+                    "id": "1473552932696690689"
+                },
+                {
+                    "path": "/userRealName/UserRealNameList",
+                    "component": "userRealName/UserRealNameList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户实名认证管理"
+                    },
+                    "name": "userRealName-UserRealNameList",
+                    "id": "1474683762650210305"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "team",
+                "title": "用户管理"
+            },
+            "name": "user",
+            "id": "1258306747287687170"
+        },
+        {
+            "redirect": null,
+            "path": "/pz",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/priceConfig/PriceConfigList",
+                    "component": "priceConfig/PriceConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "价格配置管理"
+                    },
+                    "name": "priceConfig-PriceConfigList",
+                    "id": "1476444422552829953"
+                },
+                {
+                    "path": "/userBaseInfoConfig/UserBaseInfoConfigList",
+                    "component": "userBaseInfoConfig/UserBaseInfoConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户基本信息配置"
+                    },
+                    "name": "userBaseInfoConfig-UserBaseInfoConfigList",
+                    "id": "1473841287036624897"
+                },
+                {
+                    "path": "/levelConfig/LevelConfigList",
+                    "component": "levelConfig/LevelConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户等级配置"
+                    },
+                    "name": "levelConfig-LevelConfigList",
+                    "id": "1474556716172353538"
+                },
+                {
+                    "path": "/tag/TagList",
+                    "component": "tag/TagList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "标签管理"
+                    },
+                    "name": "tag-TagList",
+                    "id": "1473592658686296065"
+                },
+                {
+                    "path": "/random/RandomAvatarList",
+                    "component": "random/RandomAvatarList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "随机头像管理"
+                    },
+                    "name": "random-RandomAvatarList",
+                    "id": "1619225346610122754"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "setting",
+                "title": "用户信息配置"
+            },
+            "name": "pz",
+            "id": "1683422370057912322"
+        },
+        {
+            "redirect": null,
+            "path": "/content",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/userFeedback/UserFeedbackList",
+                    "component": "userFeedback/UserFeedbackList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "意见反馈"
+                    },
+                    "name": "userFeedback-UserFeedbackList",
+                    "id": "1284389664664387585"
+                },
+                {
+                    "path": "/reportRecord/ReportRecordList",
+                    "component": "reportRecord/ReportRecordList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "举报管理"
+                    },
+                    "name": "reportRecord-ReportRecordList",
+                    "id": "1479731900999180290"
+                },
+                {
+                    "path": "/message/MessageList",
+                    "component": "message/MessageList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "系统消息"
+                    },
+                    "name": "message-MessageList",
+                    "id": "1484438673113169922"
+                },
+                {
+                    "path": "/post/PostList",
+                    "component": "post/PostList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "动态管理"
+                    },
+                    "name": "post-PostList",
+                    "id": "1514440780886757378"
+                },
+                {
+                    "path": "/account/AccountAppealList",
+                    "component": "account/AccountAppealList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "border-verticle",
+                        "title": "账号申诉"
+                    },
+                    "name": "account-AccountAppealList",
+                    "id": "1679313216720699393"
+                },
+                {
+                    "path": "/user/UserAlbumList",
+                    "component": "user/UserAlbumList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户相册"
+                    },
+                    "name": "user-UserAlbumList",
+                    "id": "1697149312869826561"
+                },
+                {
+                    "path": "/userHelloConfig/UserHelloConfigList",
+                    "component": "userHelloConfig/UserHelloConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "打招呼审核"
+                    },
+                    "name": "userHelloConfig-UserHelloConfigList",
+                    "id": "1476753401283813377"
+                },
+                {
+                    "path": "/userCallRecord/UserCallRecordList",
+                    "component": "userCallRecord/UserCallRecordList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "通话记录"
+                    },
+                    "name": "userCallRecord-UserCallRecordList",
+                    "id": "1514490676264194049"
+                },
+                {
+                    "path": "/userContraband/UserContrabandList",
+                    "component": "userContraband/UserContrabandList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户违禁记录"
+                    },
+                    "name": "userContraband-UserContrabandList",
+                    "id": "1514503704598720513"
+                },
+                {
+                    "path": "/commonLanguage/CommonLanguageList",
+                    "component": "commonLanguage/CommonLanguageList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "常用语管理"
+                    },
+                    "name": "commonLanguage-CommonLanguageList",
+                    "id": "1619989733237506050"
+                },
+                {
+                    "path": "/nickname/NicknameList",
+                    "component": "nickname/NicknameList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户昵称配置"
+                    },
+                    "name": "nickname-NicknameList",
+                    "id": "1552833055698079745"
+                },
+                {
+                    "path": "/commonGreeting/CommonGreetingList",
+                    "component": "commonGreeting/CommonGreetingList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "常用招呼语"
+                    },
+                    "name": "commonGreeting-CommonGreetingList",
+                    "id": "1635227330970308609"
+                },
+                {
+                    "path": "/account/InformationList",
+                    "component": "account/InformationList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "radius-upleft",
+                        "title": "资讯管理"
+                    },
+                    "name": "account-InformationList",
+                    "id": "1679313394945064962"
+                },
+                {
+                    "path": "/emo/EmoList",
+                    "component": "emo/EmoList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "表情管理"
+                    },
+                    "name": "emo-EmoList",
+                    "id": "1480848285773266946"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "profile",
+                "title": "内容管理"
+            },
+            "name": "content",
+            "id": "1284389486775566338"
+        },
+        {
+            "redirect": null,
+            "path": "/account",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/account/UserAccountDiamondList",
+                    "component": "account/UserAccountDiamondList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "金钻流水记录"
+                    },
+                    "name": "account-UserAccountDiamondList",
+                    "id": "1754462780490072065"
+                },
+                {
+                    "path": "/account/UserAccountList",
+                    "component": "account/UserAccountList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户账户信息"
+                    },
+                    "name": "account-UserAccountList",
+                    "id": "1481888188402962433"
+                },
+                {
+                    "path": "/GoldRechargeOrder/GoldRechargeOrderList",
+                    "component": "GoldRechargeOrder/GoldRechargeOrderList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户充值记录"
+                    },
+                    "name": "GoldRechargeOrder-GoldRechargeOrderList",
+                    "id": "1534794327846117377"
+                },
+                {
+                    "path": "/goldRecord/GoldRecordList",
+                    "component": "goldRecord/GoldRecordList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "桃花流水记录"
+                    },
+                    "name": "goldRecord-GoldRecordList",
+                    "id": "1481889809874751490"
+                },
+                {
+                    "path": "/account/UserAccountBillList",
+                    "component": "account/UserAccountBillList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "粉钻流水记录"
+                    },
+                    "name": "account-UserAccountBillList",
+                    "id": "1481888545501810689"
+                },
+                {
+                    "path": "/userWithdraw/UserWithdrawList",
+                    "component": "userWithdraw/UserWithdrawList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "客户端提现记录"
+                    },
+                    "name": "userWithdraw-UserWithdrawList",
+                    "id": "1478922520804339713"
+                },
+                {
+                    "path": "/userWithdraw/UserWithdrawAnalysis",
+                    "component": "userWithdraw/UserWithdrawAnalysis",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "border-horizontal",
+                        "title": "提现统计"
+                    },
+                    "name": "userWithdraw-UserWithdrawAnalysis",
+                    "id": "1678662428470124546"
+                },
+                {
+                    "path": "/vipBuyRecord/VipBuyRecordList",
+                    "component": "vipBuyRecord/VipBuyRecordList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "会员购买(VIP)记录"
+                    },
+                    "name": "vipBuyRecord-VipBuyRecordList",
+                    "id": "1480834672763707394"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "pay-circle",
+                "title": "账户管理"
+            },
+            "name": "account",
+            "id": "1481882974551740418"
+        },
+        {
+            "redirect": null,
+            "path": "/goldType",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/goldType/GoldTypeList",
+                    "component": "goldType/GoldTypeList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "充值桃花管理"
+                    },
+                    "name": "goldType-GoldTypeList",
+                    "id": "1478258654092029953"
+                },
+                {
+                    "path": "/goldBenefit/GoldBenefitList",
+                    "component": "goldBenefit/GoldBenefitList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "首冲权益管理"
+                    },
+                    "name": "goldBenefit-GoldBenefitList",
+                    "id": "1478258929943015425"
+                },
+                {
+                    "path": "/goldBeanConfig/GoldBeanConfigList",
+                    "component": "goldBeanConfig/GoldBeanConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "粉钻兑换配置"
+                    },
+                    "name": "goldBeanConfig-GoldBeanConfigList",
+                    "id": "1478564432305868801"
+                },
+                {
+                    "path": "/userWithdraw/UserWithdrawalFrequencyList",
+                    "component": "userWithdraw/UserWithdrawalFrequencyList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "提现频率设置"
+                    },
+                    "name": "userWithdraw-UserWithdrawalFrequencyList",
+                    "id": "1664837934616309762"
+                },
+                {
+                    "path": "/vipBenefit/VipBenefitList",
+                    "component": "vipBenefit/VipBenefitList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "会员权益管理"
+                    },
+                    "name": "vipBenefit-VipBenefitList",
+                    "id": "1480834312682708994"
+                },
+                {
+                    "path": "/vipType/VipTypeList",
+                    "component": "vipType/VipTypeList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "会员购类型管理"
+                    },
+                    "name": "vipType-VipTypeList",
+                    "id": "1480834519604502530"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "pay-circle",
+                "title": "账户配置管理"
+            },
+            "name": "goldType",
+            "id": "1478257911398232066"
+        },
+        {
+            "redirect": null,
+            "path": "/vipType",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/svip/VipReviewList",
+                    "component": "svip/VipReviewList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "催审记录管理"
+                    },
+                    "name": "svip-VipReviewList",
+                    "id": "1754378582622208002"
+                },
+                {
+                    "path": "/svip/VipList",
+                    "component": "svip/VipList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "超级会员管理"
+                    },
+                    "name": "svip-VipList",
+                    "id": "1753683834081181698"
+                },
+                {
+                    "path": "/svip/VipRecordList",
+                    "component": "svip/VipRecordList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "购买记录管理"
+                    },
+                    "name": "svip-VipRecordList",
+                    "id": "1754022815561949185"
+                },
+                {
+                    "path": "/account/TradeAccountDiamondList",
+                    "component": "account/TradeAccountDiamondList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "border-horizontal",
+                        "title": "总工会金钻流水记录"
+                    },
+                    "name": "account-TradeAccountDiamondList",
+                    "id": "1770742222598217729"
+                },
+                {
+                    "path": "/svip/VipEquityList",
+                    "component": "svip/VipEquityList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "会员权益管理"
+                    },
+                    "name": "svip-VipEquityList",
+                    "id": "1753683426264809473"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "heart",
+                "title": "会员管理"
+            },
+            "name": "vipType",
+            "id": "1480833925405843457"
+        },
+        {
+            "redirect": null,
+            "path": "/platform",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/app/VersionList",
+                    "component": "app/VersionList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "app版本管理"
+                    },
+                    "name": "app-VersionList",
+                    "id": "1259779760123457538"
+                },
+                {
+                    "path": "/banner/BannerList",
+                    "component": "banner/BannerList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "轮播图管理"
+                    },
+                    "name": "banner-BannerList",
+                    "id": "1284416620428648449"
+                },
+                {
+                    "path": "/imgConfig/ImgConfigList",
+                    "component": "imgConfig/ImgConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "图片管理"
+                    },
+                    "name": "imgConfig-ImgConfigList",
+                    "id": "1472120668230164481"
+                },
+                {
+                    "path": "/signInRule/SignInRuleList",
+                    "component": "signInRule/SignInRuleList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "签到规则配置"
+                    },
+                    "name": "signInRule-SignInRuleList",
+                    "id": "1472121696795140097"
+                },
+                {
+                    "path": "/helpCenter/HelpCenterList",
+                    "component": "helpCenter/HelpCenterList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "帮助中心"
+                    },
+                    "name": "helpCenter-HelpCenterList",
+                    "id": "1473210161804775425"
+                },
+                {
+                    "path": "/intimacyConfig/IntimacyConfigList",
+                    "component": "intimacyConfig/IntimacyConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "亲密值配置"
+                    },
+                    "name": "intimacyConfig-IntimacyConfigList",
+                    "id": "1474224765427150849"
+                },
+                {
+                    "path": "/levelUpType/LevelUpTypeList",
+                    "component": "levelUpType/LevelUpTypeList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "交友升级配置"
+                    },
+                    "name": "levelUpType-LevelUpTypeList",
+                    "id": "1475287734416232450"
+                },
+                {
+                    "path": "/gift/GiftList",
+                    "component": "gift/GiftList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "礼物配置"
+                    },
+                    "name": "gift-GiftList",
+                    "id": "1475364939469135873"
+                },
+                {
+                    "path": "/dress/DressList",
+                    "component": "dress/DressList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "装扮配置"
+                    },
+                    "name": "dress-DressList",
+                    "id": "1476797872943820801"
+                },
+                {
+                    "path": "/task/TaskList",
+                    "component": "task/TaskList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "任务配置"
+                    },
+                    "name": "task-TaskList",
+                    "id": "1477819011979718657"
+                },
+                {
+                    "path": "/starConfig/StarConfigList",
+                    "component": "starConfig/StarConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "周星配置"
+                    },
+                    "name": "starConfig-StarConfigList",
+                    "id": "1506873860096471041"
+                },
+                {
+                    "path": "/sayHello/SayHelloList",
+                    "component": "sayHello/SayHelloList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "交友宣言"
+                    },
+                    "name": "sayHello-SayHelloList",
+                    "id": "1516963251275894785"
+                },
+                {
+                    "path": "/radio/RadioList",
+                    "component": "radio/RadioList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "上广播说明"
+                    },
+                    "name": "radio-RadioList",
+                    "id": "1484827351523704834"
+                },
+                {
+                    "path": "/radioConfig/RadioConfigList",
+                    "component": "radioConfig/RadioConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "上广播配置"
+                    },
+                    "name": "radioConfig-RadioConfigList",
+                    "id": "1524583146891493378"
+                },
+                {
+                    "path": "/config/ConfigList",
+                    "component": "config/ConfigList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "系统配置管理"
+                    },
+                    "name": "config-ConfigList",
+                    "id": "1267996467311558657"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "setting",
+                "title": "平台管理"
+            },
+            "name": "platform",
+            "id": "1259779645568626689"
+        },
+        {
+            "redirect": "/statistics/CNMap2",
+            "path": "/statistics",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/statistics/CNMap2",
+                    "component": "statistics/CNMap2",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "用户地域分布图"
+                    },
+                    "name": "statistics-CNMap2",
+                    "id": "1673235859121790977"
+                },
+                {
+                    "path": "/statistics/AreaChartTy",
+                    "component": "statistics/AreaChartTy",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "注册用户地区统计"
+                    },
+                    "name": "statistics-AreaChartTy",
+                    "id": "1673293562053550081"
+                },
+                {
+                    "path": "/statistics/AreaRegisterChart",
+                    "component": "statistics/AreaRegisterChart",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "新增用户统计图表"
+                    },
+                    "name": "statistics-AreaRegisterChart",
+                    "id": "1676525449484054529"
+                },
+                {
+                    "path": "/statistics/UserRegConsumeChart",
+                    "component": "statistics/UserRegConsumeChart",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "新增/消费会员统计"
+                    },
+                    "name": "statistics-UserRegConsumeChart",
+                    "id": "1676843480944885762"
+                },
+                {
+                    "path": "/statistics/MemberStructure",
+                    "component": "statistics/MemberStructure",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "会员结构分布图"
+                    },
+                    "name": "statistics-MemberStructure",
+                    "id": "1678332423745998850"
+                },
+                {
+                    "path": "/statistics/UserActiveDegree",
+                    "component": "statistics/UserActiveDegree",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "活跃用户统计图"
+                    },
+                    "name": "statistics-UserActiveDegree",
+                    "id": "1678363039921221633"
+                },
+                {
+                    "path": "/statistics/FinancialStatements",
+                    "component": "statistics/FinancialStatements",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "财务统计报表"
+                    },
+                    "name": "statistics-FinancialStatements",
+                    "id": "1678369576135929858"
+                },
+                {
+                    "path": "/statistics/FinancialStatementsLine",
+                    "component": "statistics/FinancialStatementsLine",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "营收统计图"
+                    },
+                    "name": "statistics-FinancialStatementsLine",
+                    "id": "1678369762581131265"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "radar-chart",
+                "title": "统计管理"
+            },
+            "name": "statistics",
+            "id": "1673235474692857857"
+        },
+        {
+            "redirect": null,
+            "path": "/isystem",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/isystem/user",
+                    "component": "system/UserList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "系统用户管理"
+                    },
+                    "name": "isystem-user",
+                    "id": "3f915b2769fc80648e92d04e84ca059d"
+                },
+                {
+                    "path": "/isystem/roleUserList",
+                    "component": "system/RoleUserList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "系统角色管理"
+                    },
+                    "name": "isystem-roleUserList",
+                    "id": "190c2b43bec6a5f7a4194a85db67d96a"
+                },
+                {
+                    "path": "/isystem/permission",
+                    "component": "system/PermissionList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "菜单管理"
+                    },
+                    "name": "isystem-permission",
+                    "id": "54dd5457a3190740005c1bfec55b1c34"
+                },
+                {
+                    "path": "/isystem/dict",
+                    "component": "system/DictList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "数据字典"
+                    },
+                    "name": "isystem-dict",
+                    "id": "f1cb187abf927c88b89470d08615f5ac"
+                },
+                {
+                    "path": "/config/ThirdPartySetting",
+                    "component": "config/ThirdPartySetting",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "第三方设置"
+                    },
+                    "name": "config-ThirdPartySetting",
+                    "id": "1322430267920736258"
+                },
+                {
+                    "path": "/config/paySetting",
+                    "component": "config/PaySetting",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "支付设置"
+                    },
+                    "name": "config-paySetting",
+                    "id": "1322355495446700033"
+                },
+                {
+                    "path": "/config/WxSetting",
+                    "component": "config/WxSetting",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "微信应用设置"
+                    },
+                    "name": "config-WxSetting",
+                    "id": "1323070626518523905"
+                },
+                {
+                    "path": "/system/AreaList",
+                    "component": "system/AreaList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "区域管理"
+                    },
+                    "name": "system-AreaList",
+                    "id": "1328520161122234369"
+                },
+                {
+                    "path": "/config/SmsSetting",
+                    "component": "config/SmsSetting",
+                    "route": "1",
+                    "hidden": true,
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "短信设置"
+                    },
+                    "name": "config-SmsSetting",
+                    "id": "1323077776066207746"
+                },
+                {
+                    "path": "/isystem/log",
+                    "component": "system/LogList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "日志管理"
+                    },
+                    "name": "isystem-log",
+                    "id": "58857ff846e61794c69208e9d3a85466"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "setting",
+                "title": "系统管理"
+            },
+            "name": "isystem",
+            "id": "d7d6e2e4e2934f2c9385a623fd98c6f3"
+        },
+        {
+            "redirect": null,
+            "path": "/dashboard3",
+            "component": "layouts/RouteView",
+            "route": "1",
+            "children": [
+                {
+                    "path": "/monitor",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/monitor/redis/info",
+                            "component": "modules/monitor/RedisInfo",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "title": "Redis监控"
+                            },
+                            "name": "monitor-redis-info",
+                            "id": "8d1ebd663688965f1fd86a2f0ead3416"
+                        },
+                        {
+                            "path": "/monitor/JvmInfo",
+                            "component": "modules/monitor/JvmInfo",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "title": "JVM信息"
+                            },
+                            "name": "monitor-JvmInfo",
+                            "id": "d07a2c87a451434c99ab06296727ec4f"
+                        },
+                        {
+                            "path": "/monitor/TomcatInfo",
+                            "component": "modules/monitor/TomcatInfo",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "title": "Tomcat信息"
+                            },
+                            "name": "monitor-TomcatInfo",
+                            "id": "024f1fd1283dc632458976463d8984e1"
+                        },
+                        {
+                            "path": "/monitor/HttpTrace",
+                            "component": "modules/monitor/HttpTrace",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "title": "请求追踪"
+                            },
+                            "name": "monitor-HttpTrace",
+                            "id": "fc810a2267dd183e4ef7c71cc60f4670"
+                        },
+                        {
+                            "path": "/monitor/SystemInfo",
+                            "component": "modules/monitor/SystemInfo",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "title": "服务器信息"
+                            },
+                            "name": "monitor-SystemInfo",
+                            "id": "8b3bff2eee6f1939147f5c68292a1642"
+                        },
+                        {
+                            "path": "/monitor/Disk",
+                            "component": "modules/monitor/DiskMonitoring",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "title": "磁盘监控"
+                            },
+                            "name": "monitor-Disk",
+                            "id": "97c8629abc7848eccdb6d77c24bb3ebb"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "性能监控"
+                    },
+                    "name": "monitor",
+                    "id": "700b7f95165c46cc7a78bf227aa8fed3"
+                },
+                {
+                    "path": "5f22d2592b01c9e964efe70040162b83",
+                    "component": "layouts/IframePageView",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "SQL监控",
+                        "url": "{{ window._CONFIG['domianURL'] }}/druid/"
+                    },
+                    "name": "{{ window._CONFIG['domianURL'] }}-druid-",
+                    "id": "aedbf679b5773c1f25e9f7b10111da73"
+                },
+                {
+                    "path": "/sys/dataLog-list",
+                    "component": "system/DataLogList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "数据日志"
+                    },
+                    "name": "sys-dataLog-list",
+                    "id": "841057b8a1bef8f6b4b20f9a618a7fa6"
+                },
+                {
+                    "path": "/isystem/QuartzJobList",
+                    "component": "system/QuartzJobList",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "定时任务"
+                    },
+                    "name": "isystem-QuartzJobList",
+                    "id": "b1cb0a3fedf7ed0e4653cb5a229837ee"
+                },
+                {
+                    "path": "10b80437abc6eee8c3e3daabb5e9f59e",
+                    "component": "layouts/IframePageView",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "title": "在线文档",
+                        "url": "{{ window._CONFIG['domianURL'] }}/doc.html"
+                    },
+                    "name": "{{ window._CONFIG['domianURL'] }}-doc.html",
+                    "id": "2dbbafa22cda07fa5d169d741b81fe12"
+                }
+            ],
+            "meta": {
+                "keepAlive": false,
+                "internalOrExternal": false,
+                "icon": "dashboard",
+                "title": "系统监控"
+            },
+            "name": "dashboard3",
+            "id": "08e6b9dc3c04489c8e1ff2ce6f105aa4"
+        }
+    ]
+}
